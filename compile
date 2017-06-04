@@ -1,6 +1,6 @@
 cd $assets_dir
 
-yarn build
+REACT_APP_BLOG_URL="https://phx-notes.herokuapp.com/api" yarn build
 
 cd $phoenix_dir
 
