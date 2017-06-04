@@ -1,0 +1,11 @@
+.tile-content {
+  text-align: center;
+  background: #5764c6;
+  color: #fff;
+  padding-top: 15px;
+}
+
+.tile-title {
+  font-size: 24px;
+  font-weight: bold;
+}
