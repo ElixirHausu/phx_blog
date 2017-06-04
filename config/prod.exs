@@ -15,11 +15,19 @@ use Mix.Config
 # which you typically run after static files are built.
 config :phx_blog, PhxBlog.Web.Endpoint,
   on_init: {PhxBlog.Web.Endpoint, :load_from_system_env, []},
-  url: [host: "example.com", port: 80],
+  url: [host: "peaceful-ridge-14452.herokuapp.com", port: 443],
+  force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/asset-manifest.json"
+  secret_key_base: System.get_env("SECRET_KEY_BASE")
 
 # Do not print debug messages in production
 config :logger, level: :info
+
+config :phx_blog, PhxBlog.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  url: System.get_env("DATABASE_URL"),
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+  ssl: true
 
 # ## SSL Support
 #
@@ -28,7 +36,7 @@ config :logger, level: :info
 #
 #     config :phx_blog, PhxBlog.Web.Endpoint,
 #       ...
-#       url: [host: "example.com", port: 443],
+#       url: [host: "peaceful-ridge-14452.herokuapp.com", port: 443],
 #       https: [:inet6,
 #               port: 443,
 #               keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
@@ -61,4 +69,4 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
-import_config "prod.secret.exs"
+# import_config "prod.secret.exs"
