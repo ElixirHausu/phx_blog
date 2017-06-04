@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import 'spectre.css/dist/spectre.css'
+import 'spectre.css/dist/spectre-icons.css'
 import './index.css';
-import './spectre.css';
-import './spectre-icons.css';
 
 ReactDOM.render(
   <App />,
