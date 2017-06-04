@@ -1,3 +1,7 @@
+cd $assets_dir
+
+yarn build
+
 cd $phoenix_dir
 
 mix "${phoenix_ex}.digest" priv/blog/build -o priv/static
