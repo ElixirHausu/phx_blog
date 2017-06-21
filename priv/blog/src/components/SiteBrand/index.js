@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./SiteBrand.css";
+import React, { Component } from 'react'
+import './SiteBrand.css'
 
 class SiteBrand extends Component {
   render() {
@@ -12,8 +12,8 @@ class SiteBrand extends Component {
           </p>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default SiteBrand;
+export default SiteBrand

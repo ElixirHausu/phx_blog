@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
 class SiteMenu extends Component {
   render() {
@@ -31,8 +31,8 @@ class SiteMenu extends Component {
           </a>
         </li>
       </ul>
-    );
+    )
   }
 }
 
-export default SiteMenu;
+export default SiteMenu

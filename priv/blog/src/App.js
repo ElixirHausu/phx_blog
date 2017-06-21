@@ -1,23 +1,23 @@
-import React, { Component } from "react";
-import "./App.css";
+import React, { Component } from 'react'
+import './App.css'
 
 import {
   ApolloClient,
   ApolloProvider,
   createNetworkInterface
-} from "react-apollo";
-import UserListWithData from "./components/UserListWithData";
+} from 'react-apollo'
+import UserListWithData from './components/UserListWithData'
 
-import SiteMenu from "./components/SiteMenu";
-import SiteBrand from "./components/SiteBrand";
+import SiteMenu from './components/SiteMenu'
+import SiteBrand from './components/SiteBrand'
 
 const networkInterface = createNetworkInterface({
-  uri: process.env.REACT_APP_BLOG_URL || "http://localhost:4000/graphql"
-});
+  uri: process.env.REACT_APP_BLOG_URL || 'http://localhost:4000/graphql'
+})
 
 const client = new ApolloClient({
   networkInterface
-});
+})
 
 class App extends Component {
   render() {
@@ -30,13 +30,13 @@ class App extends Component {
               <SiteMenu />
             </div>
             <div className="column col-8">
-              <UserListWithData/>
+              <UserListWithData />
             </div>
           </div>
         </div>
       </ApolloProvider>
-    );
+    )
   }
 }
 
-export default App;
+export default App

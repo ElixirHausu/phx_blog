@@ -1,5 +1,7 @@
 # PhxBlog
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`

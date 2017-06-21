@@ -23,6 +23,7 @@ node_modules
 
 # production
 /build
+/priv/static
 
 # misc
 .DS_Store
@@ -36,3 +37,4 @@ yarn-debug.log*
 yarn-error.log*
 
 .vscode
+.elixir_ls
