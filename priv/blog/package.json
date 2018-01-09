@@ -3,24 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^15.6.1",
+    "react": "^16.2.0",
     "react-apollo": "^1.4.2",
-    "react-dom": "^15.6.1",
-    "spectre.css": "^0.2.14"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^2.0.0",
-    "react-scripts": "1.0.7"
+    "react-scripts": "1.0.17"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }

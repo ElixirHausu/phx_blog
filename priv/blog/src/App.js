@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './App.css'
 
 import {
   ApolloClient,
@@ -29,8 +28,10 @@ class App extends Component {
               <SiteBrand />
               <SiteMenu />
             </div>
-            <div className="column col-8">
-              <UserListWithData />
+            <div className="column col-9">
+              <div className="main">
+                <UserListWithData />
+              </div>
             </div>
           </div>
         </div>
