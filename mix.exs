@@ -4,7 +4,7 @@ defmodule PhxBlog.Mixfile do
   def project do
     [app: :phx_blog,
      version: "0.0.1",
-     elixir: "~> 1.4",
+     elixir: "~> 1.6",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
      start_permanent: Mix.env == :prod,
@@ -28,7 +28,7 @@ defmodule PhxBlog.Mixfile do
   #
   # Type `mix help deps` for examples and options.
   defp deps do
-    [{:phoenix, "~> 1.3.0-rc"},
+    [{:phoenix, "~> 1.3.0"},
      {:phoenix_pubsub, "~> 1.0"},
      {:phoenix_ecto, "~> 3.2"},
      {:postgrex, ">= 0.0.0"},
@@ -36,9 +36,9 @@ defmodule PhxBlog.Mixfile do
      {:cowboy, "~> 1.0"},
      {:cors_plug, "~> 1.2"},
      {:plug_static_index_html, "~> 0.1.0"},
-     {:absinthe, "~> 1.3.0-beta"},
-     {:absinthe_plug, "~> 1.3.0-beta"},
-     {:absinthe_ecto, git: "https://github.com/absinthe-graphql/absinthe_ecto.git"},
+     {:absinthe, "~> 1.4.0"},
+     {:absinthe_plug, "~> 1.4.0"},
+     {:absinthe_ecto, "~> 0.1.3"},
      {:faker, "~> 0.7"},
      {:timex, "~> 3.0"}]
   end
